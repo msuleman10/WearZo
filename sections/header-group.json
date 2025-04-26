@@ -43,7 +43,12 @@
       "type": "header",
       "custom_css": [
         ".header-wrapper {display: flex; justify-content: center; align-items: center;}",
-        ".header {margin: 0; width: 100%; max-width: 100%;}"
+        ".header {margin: 0; width: 100%; max-width: 100%; padding: 0;}",
+        ".header__search {padding-left: 5rem; display: none;}",
+        ".menu-drawer-container {padding-left: 5rem;}",
+        ".header__inline-menu {margin: 0px; width: 100%; text-align: center; border: 0 solid #e5e7eb; border-bottom-width: 1px; border-top-width: 1px; padding: 0rem 5rem 0rem 5rem; margin-top: -5px;}",
+        ".header__icons {padding-right: 5rem;}",
+        ".header__icons .header__search{display: block;}"
       ],
       "settings": {
         "logo_position": "top-center",

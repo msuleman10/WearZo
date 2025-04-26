@@ -947,7 +947,13 @@
               {%- if customer and customer.has_avatar? -%}
                 {{ customer | avatar }}
               {%- else -%}
-                <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
+                {% comment %} <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span> {% endcomment %}
+                <span class="svg-custom-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 5.5C15.5 7.433 13.933 9 12 9C10.067 9 8.5 7.433 8.5 5.5C8.5 3.567 10.067 2 12 2C13.933 2 15.5 3.567 15.5 5.5Z" stroke="#000000" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.675 16C4.675 13.6114 6.61137 11.675 9 11.675C9.29014 11.675 9.62683 11.8426 10.1722 12.1456C10.1922 12.1567 10.2126 12.1681 10.2334 12.1797C10.6852 12.4315 11.3213 12.7861 12 12.7861C12.6787 12.7861 13.3148 12.4315 13.7666 12.1797C13.7874 12.1681 13.8078 12.1567 13.8278 12.1456C14.3732 11.8426 14.7099 11.675 15 11.675C17.3886 11.675 19.325 13.6114 19.325 16V19C19.325 19.7318 18.7318 20.325 18 20.325H6C5.26822 20.325 4.675 19.7318 4.675 19V16Z" stroke="#000000" stroke-width="1.35"/>
+                  </svg>
+                </span>
               {%- endif -%}
             </account-icon>
           {%- else -%}
@@ -974,9 +980,11 @@
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}
-          <span class="svg-wrapper">{{ 'icon-cart-empty.svg' | inline_asset_content }}</span>
+          {% comment %} <span class="svg-wrapper">{{ 'icon-cart-empty.svg' | inline_asset_content }}</span> {% endcomment %}
+          <span class="svg-custom-wrapper">{{ 'wz-icon-cart.svg' | inline_asset_content }}</span>
         {% else %}
-          <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span>
+          {% comment %} <span class="svg-wrapper">{{ 'icon-cart.svg' | inline_asset_content }}</span> {% endcomment %}
+          <span class="svg-custom-wrapper">{{ 'wz-icon-cart.svg' | inline_asset_content }}</span>
         {% endif %}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
