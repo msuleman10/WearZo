@@ -41,11 +41,14 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [],
+      "custom_css": [
+        ".header-wrapper {display: flex; justify-content: center; align-items: center;}",
+        ".header {margin: 0; width: 100%; max-width: 100%;}"
+      ],
       "settings": {
         "logo_position": "top-center",
         "mobile_logo_position": "center",
-        "menu": "main-menu",
+        "menu": "wear-zo-mega-menue",
         "menu_type_desktop": "mega",
         "sticky_header_type": "none",
         "show_line_separator": true,
