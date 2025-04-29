@@ -11,6 +11,12 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-hero__text-wrapper {display: flex; flex-direction: column; align-items: center; justify-content: center;}",
+        ".collection-hero__title {margin-bottom: 0px; font-size: x-large;}",
+        ".collection-hero__description {text-align: center; max-width: 90%; font-size: medium; margin: 0;}",
+        ".collection-hero {border: 0 solid #e5e7eb; border-bottom-width: 1px;}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -22,17 +28,17 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
