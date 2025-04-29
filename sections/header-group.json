@@ -48,14 +48,14 @@
         ".menu-drawer-container {padding-left: 5rem;}",
         ".header__inline-menu {margin: 0px; width: 100%; text-align: center; border: 0 solid #e5e7eb; border-bottom-width: 1px; border-top-width: 1px; padding: 0rem 5rem 0rem 5rem; margin-top: -5px;}",
         ".header__icons {padding-right: 5rem;}",
-        ".header__icons .header__search{display: block;}"
+        ".header__icons .header__search {display: block;}"
       ],
       "settings": {
         "logo_position": "top-center",
         "mobile_logo_position": "center",
         "menu": "wear-zo-mega-menue",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "none",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
